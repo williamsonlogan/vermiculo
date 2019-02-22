@@ -151,13 +151,7 @@ int app::Loop (void)
 			}
 		}
 	}
-	
-	for(int x = 0; x < screenWidth; x++)
-		for (int y = 0; y < screenHeight; y++)
-			buffer.Poke(x, y, 0, 0, 0);
-	
-	buffer.Poke(1, 1, 255, 0, 0);
-	
+
 	buffer.Draw();
 	
 	agk::Sync();
